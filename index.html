@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assest/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <section>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-1 fixed-top border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assest/images/logo.png" class="logo" alt="logo" /></a>
+          <button class="navbar-toggler border-0 fs-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="ms-2">MENU</span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">FEATURED</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">POPLUAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav -->
+      <!-- carousel -->
+      <div class="hero">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide  h-100 w-100">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100" data-bs-interval="10000">
+              <div class="d-flex flex-md-nowrap flex-wrap flex-lg-row justify-content-evenly align-items-center h-100">
+                <div class="c ">
+                  <h5 class="font mb-3">life is the wilde</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Itaque, dolor excepturi modi commodi nemo dolorum iste
+                    aperiam illum dicta alias impedit velit? Ullam, delectus
+                    unde. Beatae laudantium veritatis maiores mollitia!
+                  </p>
+                  <button type="button" class="but mt-3">REDE MORE <i class="fa-solid fa-arrow-right "></i></button>
+                </div>
+                <img src="./assest/images/main-banner1.jpg" class="d-block img order-md-last order-first "
+                  alt="book1" />
+              </div>
+            </div>
+            <div class="carousel-item h-100" data-bs-interval="2000">
+              <div class="d-flex flex-md-nowrap flex-wrap flex-lg-row justify-content-evenly align-items-center h-100">
+                <div class="c ">
+                  <h5 class="font mb-3">life is the wilde</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Itaque, dolor excepturi modi commodi nemo dolorum iste
+                    aperiam illum dicta alias impedit velit? Ullam, delectus
+                    unde. Beatae laudantium veritatis maiores mollitia!
+                  </p>
+                  <button type="button" class="but mt-3">REDE MORE <i class="fa-solid fa-arrow-right "></i></button>
+                </div>
+                <img src="./assest/images/main-banner2.jpg" class="d-block img order-md-last order-first "
+                  alt="book1" />
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <div class="rounded-circle d-flex justify-content-center align-items-center  cirle"> <i
+                class="fa-solid fa-arrow-left  coler-word"></i></div>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <div class="rounded-circle d-flex justify-content-center align-items-center  cirle"><i class="fa-solid fa-arrow-right 
+            coler-word"></i></div>
+
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end carousel -->
+  </header>
+  <main>
+    <section class="d-flex justify-content-center p-5 bg-coler  flex-wrap">
+      <img src="./assest/images/client-image1.png" class="p-2" alt="logos" />
+      <img src="./assest/images/client-image2.png" class="p-2" alt="logos" />
+      <img src="./assest/images/client-image3.png" class="p-2" alt="logos" />
+      <img src="./assest/images/client-image4.png" class="p-2" alt="logos" />
+      <img src="./assest/images/client-image5.png" class="p-2" alt="logos" />
+    </section>
+    <!-- Api -->
+    <section class="books ">
+      <div class="d-flex flex-column justify-content-center align-items-center pt-5 mb-3">
+        <p class="coler-word">SOME QUALITY ITEMS</p>
+        <div class="liner d-flex  justify-content-center align-items-center">
+          <h2>Featured Books</h2>
+        </div>
+      </div>
+      <div class="container px-4 text-center">
+        <div class="row" id="card"></div>
+      </div>
+      <div class="border border-bottom mb-3"></div>
+      <div class="d-flex justify-content-end mar text-black">
+        <p> View All Products <i class="fa-solid fa-arrow-right  coler-word"></i></p>
+      </div>
+    </section>
+    <!-- api 2 -->
+    <section class="books2 bg-coler mt-5 p-5">
+      <div class="container">
+        <div class="row d-flex align-items-center" id="book"></div>
+      </div>
+    </section>
+    <!-- api 3 -->
+    <section>
+      <div class="d-flex flex-column justify-content-center align-items-center pt-5 mb-3 ">
+        <p class="coler-word">SOME QUALITY ITEMS</p>
+        <div class="liner d-flex  justify-content-center align-items-center">
+          <h2>Featured Books</h2>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center ">
+        <ul class="nav nav-underline">
+          <li class="nav-item m-3">
+            <a class="nav-link active" aria-current="page" href="#">All Genre</a>
+          </li>
+          <li class="nav-item m-3">
+            <a class="nav-link coler-word" href="#">Business</a>
+          </li>
+          <li class="nav-item m-3">
+            <a class="nav-link coler-word" href="#">Technology</a>
+          </li>
+          <li class="nav-item m-3 ">
+            <a class="nav-link coler-word" href="#">Romantic</a>
+          </li>
+          <li class="nav-item m-3">
+            <a class="nav-link coler-word" href="#">Adventure</a>
+          </li>
+          <li class="nav-item m-3">
+            <a class="nav-link coler-word" href="#">Fictionl</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container px-4 py-3 mb-5 text-center">
+        <div class="row" id="popluar"></div>
+      </div>
+
+    </section>
+
+    <section class="bg-coler p d-flex justify-content-center  align-items-center  ">
+      <div class="container ">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="subscription-title font2">Subscribe To Our Newsletter</h2>
+            </div>
+            <div class="col-md-6 bor">
+                <p>Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra hac.</p>
+                <div class=" mt-3 p-3 d-flex justify-content-between  align-items-center">
+                  <input class="border-0 bg-coler w-100 " placeholder="Enter your email address here" >
+                  <button type="button" class="btn btn-send">
+                      SEND <i class="fas fa-paper-plane"></i>
+                  </button>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+  </main>
+  
+  <!-- footer -->
+  <footer>
+    <section>
+      <!-- Footer -->
+      <footer class="bg-body-tertiary text-center border-top ">
+        <!-- Grid container -->
+        <div class="container p-5">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">BOOKSAW</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">About Us</h5>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none mb-3">vision</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">articles</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">careers</a>
+                </li class="mb-3">
+                <li>
+                  <a href="#!" class="text-body text-decoration-none">service terms</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">donate</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3">Discover</h5>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Home</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Books</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Authors</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Subjects</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Advanced Search</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3">My Account</h5>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Home</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Sign In</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">View Cart</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">My Wishlist</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Track My Order</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-3">Help</h5>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none">Help Center</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none ">Report a problem</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none ">Suggesting edits</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-body text-decoration-none ">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="p-3 border-top d-flex flex-wrap gap-2 justify-content-around align-items-center bg-body-tertiary"
+          >
+          <div>
+            <p> © 2020 Copyright:All rights reserved free .Temple by
+              <a class="text-body text-decoration-none" href="#">TemplatesJungle</a>
+            </p>
+          </div>
+          <div >
+            <a href="https://www.facebook.com/profile.php?id=100043380500584"
+              class=" text-reset me-4 text-decoration-none ">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-reset me-4 text-decoration-none">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#" class=" text-reset me-4 text-decoration-none">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class=" text-reset me-4 text-decoration-none">
+              <i class="fa-brands fa-square-behance"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="./assest/js/script.js"></script>
+</body>
+
+</html>
